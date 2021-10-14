@@ -63,7 +63,7 @@ struct prestatarios{
 Proposito: agregar categorias al struct catecoria1
 Retorno: VOID
 */
-void agregar_categoria(categorias arreglo[],int & dlp){
+void agregar_categoria(categorias arreglo[],int & DIM_LOGICA){
 	
 	string nueva_categoria;
 	cout<<"Ingrese una nueva categoria: "<<endl;
@@ -168,7 +168,7 @@ int submenu_1(char opcion){
         switch(opcion){
 
             case '1':
-                agregar_categoria(categorias, dlp);
+                agregar_categoria(categorias, DIM_LOGICA);
                 break;
             case '2':
                 modificar_categoria();
